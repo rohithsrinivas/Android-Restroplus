@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.restroplus.activity.SignUpPage">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin4">
+
+
+        <ImageView
+            android:layout_width="@dimen/size130"
+            android:layout_height="@dimen/size130"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin32"
+            android:src="@mipmap/logo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextEmailSignUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:layout_margin="@dimen/margin10"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/black"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/violet" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextPasswordSignUpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/password"
+                android:layout_margin="@dimen/margin10"
+                android:textColorHint="@color/black"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/violet" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="@drawable/shape_curved_button_cyan"
+            android:text="@string/signUp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_reset_password"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dip"-->
+            <!--android:background="@null"-->
+            <!--android:text="Forgot password?"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/darkOrange" />-->
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="@string/alreadyAUser"
+            android:textAllCaps="false"
+            android:textColor="@color/darkGreen"
+            android:textSize="@dimen/textSize15" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarSignUpPage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

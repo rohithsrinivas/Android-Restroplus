@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:textSize="@dimen/textSize17"
+                android:textColor="@color/violet"
+                android:text="@string/bookingId"/>
+
+    <TextView
+        android:id="@+id/textViewBookingIdViewBookings"
+        android:clickable="false"
+        android:text="100"
+        android:layout_marginBottom="@dimen/margin4"
+        android:textSize="@dimen/textSize15"
+        android:textColor="@color/midnightBlue"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkGreen"
+                android:textSize="@dimen/textSize17"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/restaurantName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_marginBottom="@dimen/margin4"
+        android:textSize="@dimen/textSize15"
+        android:textStyle="italic"
+        android:textColor="@color/forestGreen"
+        android:text="Deja vu"
+        android:id="@+id/textViewRestaurantNameViewBookings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maroon"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="@dimen/textSize17"
+                android:text="@string/date"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_marginBottom="@dimen/margin4"
+        android:id="@+id/textViewBookingDateViewBookings"
+        android:textStyle="italic"
+        android:textSize="@dimen/textSize15"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/darkOrange"
+        android:text="10 jan 2018"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <Button
+            android:id="@+id/buttonViewBookingDetailsViewBookings"
+            android:layout_width="wrap_content"
+            android:textColor="@color/darkGreen"
+            android:background="@drawable/shape_curved_button_grey"
+            android:layout_height="wrap_content"
+            android:text="@string/view" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/lightGrey"
+        android:layout_height="@dimen/dividerHeight"/>
+
+</LinearLayout>
