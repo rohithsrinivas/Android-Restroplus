@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+
+    <Button
+        android:id="@+id/buttonReduceQuantity"
+        android:layout_width="@dimen/size30"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@color/lighterGrey"
+        android:textColor="@color/brightRed"
+        android:textSize="@dimen/textSize17"
+        android:text="@string/minus" />
+
+    <TextView
+        android:id="@+id/textViewForItemQuantity"
+        android:layout_width="@dimen/size50"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="10"
+        android:textSize="@dimen/textSize17"
+        android:cursorVisible="false"
+        android:textColor="@color/midnightBlue"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="@drawable/border_text_view"
+        android:ems="10"
+        android:layout_marginRight="@dimen/margin8"
+        android:layout_marginLeft="@dimen/margin8"
+        android:layout_marginTop="@dimen/margin2"
+        android:layout_marginBottom="@dimen/margin2"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonIncreaseQuantity"
+        android:layout_width="@dimen/size30"
+        android:textSize="@dimen/textSize17"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@color/lighterGrey"
+        android:textColor="@color/forestGreen"
+        android:text="@string/plus" />
+
+</LinearLayout>

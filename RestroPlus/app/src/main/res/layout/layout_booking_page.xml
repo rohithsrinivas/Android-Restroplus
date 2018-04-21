@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.restroplus.activity.BookingPage"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+     android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin8"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginTop="@dimen/margin16"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewForHeaderInBooking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="You need "
+                android:textColor="@color/cyan"
+                android:textSize="@dimen/textSize20"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="0.2"-->
+                <!--android:textStyle="italic"-->
+                <!--android:scaleX="-0.7"-->
+                <!--android:layout_height="@dimen/size40"-->
+                <!--android:background="@mipmap/cart6"-->
+                <!--android:id="@+id/buttonViewCart"-->
+                <!--/>-->
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16"
+            android:text="@string/menu"
+            android:textColor="@color/darkOrange"
+            android:textSize="@dimen/textSize20"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewForItems"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/margin8"
+            android:layout_marginEnd="@dimen/margin8"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginTop="@dimen/margin16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/buttonViewCart"
+            android:layout_width="@dimen/size65"
+            android:layout_height="@dimen/size65"
+            android:layout_marginBottom="@dimen/margin32"
+            android:backgroundTint="@color/colorAccent"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:fabSize="mini"
+            app:srcCompat="@mipmap/cart19" />
+
+        <TextView
+            android:id="@+id/textViewNumberOfItemsInCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="@dimen/padding1"
+            android:elevation="@dimen/margin10"
+            android:textColor="@color/white"
+            android:background="@drawable/circular_background"
+            android:layout_marginTop="@dimen/margin2"
+            android:text="10"
+            app:layout_constraintEnd_toEndOf="@+id/buttonViewCart"
+            app:layout_constraintStart_toStartOf="@+id/buttonViewCart"
+            app:layout_constraintTop_toTopOf="@+id/buttonViewCart" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

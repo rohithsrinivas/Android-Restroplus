@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:id="@+id/textLayoutCartItem"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/itemName"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noodles"
+            android:textStyle="italic"
+            android:textSize="@dimen/textSize17"
+            android:layout_marginBottom="@dimen/margin4"
+            android:textColor="@color/midnightBlue"
+            android:id="@+id/textViewForItemNameInCartPage"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/category"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="starters"
+            android:textStyle="italic"
+            android:textSize="@dimen/textSize17"
+            android:layout_marginBottom="@dimen/margin4"
+            android:textColor="@color/violet"
+            android:id="@+id/textViewForCategoryInCartPage"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/totalItemPrice"
+                android:textColor="@color/forestGreen"
+                android:textSize="@dimen/textSize15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textStyle="italic"
+            android:textSize="@dimen/textSize17"
+            android:layout_marginBottom="@dimen/margin4"
+            android:textColor="@color/brightRed"
+            android:id="@+id/textViewForPriceInCartPage"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:id="@+id/imageLayoutCartItem"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin4"
+        android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="@dimen/size45"
+        android:layout_height="@dimen/size45"
+        android:layout_gravity="center"
+        android:id="@+id/buttonRemoveFromCartInCartPage"
+        android:background="@mipmap/removefromcart"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/lightGrey"
+        android:layout_height="@dimen/dividerHeight"/>
+
+
+</LinearLayout>

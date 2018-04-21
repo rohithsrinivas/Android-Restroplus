@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.restroplus.restroplus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.restroplus.activity.LoginPage" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.restroplus.activity.SearchPage" android:label="@string/searchTermLabel" />
+        <activity android:name="com.restroplus.activity.SearchResults" android:label="@string/searchResultsLabel"/>
+        <activity android:name="com.restroplus.activity.BookingPage" android:label="@string/itemsLabel"/>
+        <activity android:name="com.restroplus.activity.ViewCartPage" android:label="@string/viewCartLabel"/>
+        <activity android:name="com.restroplus.activity.BookingConfirmation" android:label="@string/bookingConfLabel"/>
+        <activity android:name="com.restroplus.activity.ViewBookings" android:label="@string/viewYourBookings"/>
+        <activity android:name="com.restroplus.activity.OpeningPage" android:label="@string/homeLabel"/>
+        <activity android:name="com.restroplus.activity.SignUpPage" android:label="@string/registrationLabel"></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

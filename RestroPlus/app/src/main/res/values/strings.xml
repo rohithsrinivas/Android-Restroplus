@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">RestroPlus</string>
+    <string name="alertDialogTitle">Please enter the quantity</string>
+    <string name="alertDialogPositiveButtonText">Add to bucket</string>
+    <string name="alertDialogNegativeButtonText">Cancel</string>
+    <string name="alertDialogErrorMessage">Please enter a valid quantity</string>
+    <string name="alertDialogMessage">Specify the no of unit(s)</string>
+    <string name="numberOfTablesRequired">number of table(s) required is </string>
+    <string name="loginLabel">Please Login to Restroplus</string>
+    <string name="registrationLabel">Sign up for Restroplus</string>
+    <string name="searchLabel">Search for restaurants</string>
+    <string name="homeLabel">Home Page</string>
+    <string name="searchTermLabel">Enter the search terms</string>
+    <string name="searchResultsLabel">Search results</string>
+    <string name="itemsLabel">Add Items to the cart</string>
+    <string name="viewCartLabel">Review cart contents</string>
+    <string name="bookingConfLabel">Booking Confirmation</string>
+    <string name="bookingId">Booking id : </string>
+    <string name="viewYourBookings">View Your bookings</string>
+    <string name="restaurantName">Restaurant name : </string>
+    <string name="numberOfTablesBooked">Number of tables booked : </string>
+    <string name="orderedItems">Ordered Items</string>
+    <string name="billingAmountInINR">the billing amount in INR was : </string>
+    <string name="date">Date : </string>
+    <string name="view">View</string>
+    <string name="itemName">Item Name : </string>
+    <string name="category">Category : </string>
+    <string name="totalItemPrice">Total Item Price : </string>
+    <string name="itemPrice">Item Price : </string>
+    <string name="menu">-----Menu-----</string>
+    <string name="email">E-Mail</string>
+    <string name="signIn">Sign in</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="searchRestaurants">Search Restaurants</string>
+    <string name="viewMyBookings">View my bookings</string>
+    <string name="byName">By Name</string>
+    <string name="byAddress">By Address</string>
+    <string name="enterSearchTerm">Enter search term here</string>
+    <string name="getRestaurants">Get Restaurants</string>
+    <string name="name">Name :</string>
+    <string name="address">Address :</string>
+    <string name="numberOfTablesAvailable">Number of tables available :</string>
+    <string name="signUp">Sign Up</string>
+    <string name="alreadyAUser">Already a user? Login here</string>
+    <string name="yourBookings">Your Bookings</string>
+    <string name="amountPayable">Total amount payable(INR) :</string>
+    <string name="checkOut">Check Out</string>
+    <string name="itemsInYourCart">Item(s) currently in your cart</string>
+
+    <string name="facebook_app_id">2098271537126158</string>
+    <string name="fb_login_protocol_scheme">fb2098271537126158</string>
+
+</resources>
